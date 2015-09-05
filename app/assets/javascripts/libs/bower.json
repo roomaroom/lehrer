@@ -1,0 +1,23 @@
+{
+  "name": "libs",
+  "version": "0.0.1",
+  "authors": [
+    "Rocky Jaiswal <rocky.jaiswal@gmail.com>"
+  ],
+  "description": "app",
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "underscore": "~1.8.3"
+  }
+}

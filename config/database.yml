@@ -1,0 +1,25 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  # For details on connection pooling, see rails configuration guide
+  # http://guides.rubyonrails.org/configuring.html#database-pooling
+  pool: 5
+  username: postgresdev
+  password: postgresdev
+  host: localhost
+  port: 5432
+
+development:
+  <<: *default
+  database: lehrer_dev
+
+test:
+  <<: *default
+  database: lehrer_test
+
+production:
+  <<: *default
+  host:     '172.17.42.1'
+  database: lehrer_production
+  username: lehrer
+  password: <%= ENV['LEHRER_DATABASE_PASSWORD'] %>

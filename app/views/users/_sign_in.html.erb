@@ -1,0 +1,19 @@
+<h2>Log In</h2>
+
+<%= form_for(:user, url: login_users_path)  do |f| %>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password %><br />
+    <%= f.password_field :password, autocomplete: "off" %>
+  </div>
+
+  <div class="actions">
+    <%= button_tag(type: "submit", class: "button button-3d-action") do %>
+    Log In <i class="fa fa-sign-in"></i>
+    <% end %>
+  </div>
+<% end %>

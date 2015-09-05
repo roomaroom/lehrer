@@ -1,0 +1,34 @@
+$bright_blue: #2D7BCC;
+$dark_blue: #1C4D7F;
+$light_blue: #C5EFF7;
+$cloudy: #ecf0f1;
+$mygray: #ccc;
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+@import "partials/buttons";
+
+.actions {
+  margin-top: 10px;
+}
+
+.divider {
+  height: 300px;
+  border-left: 1px dashed black;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 0px;
+  color: $cloudy;
+  background-color: $dark_blue;
+  .text-center{
+      text-align: center;
+  }
+}
+
