@@ -16,10 +16,3 @@ development:
 test:
   <<: *default
   database: lehrer_test
-
-production:
-  <<: *default
-  host:     '172.17.42.1'
-  database: lehrer_production
-  username: lehrer
-  password: <%= ENV['LEHRER_DATABASE_PASSWORD'] %>
