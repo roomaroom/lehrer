@@ -16,6 +16,9 @@ gem 'compass-rails'
 gem 'uglifier'
 gem 'sprockets'
 
+#deployment
+gem 'capistrano'
+
 group :development, :test do
   gem 'pry-rails'
   gem 'thin'

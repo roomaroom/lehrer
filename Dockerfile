@@ -29,6 +29,7 @@ RUN mkdir /home/app/lehrer
 WORKDIR /home/app/lehrer
 ADD . /home/app/lehrer
 RUN bundle install --binstubs --deployment --without test development
+RUN bundle exec rake assets:precompile
 
 RUN chown -R app:app /home/app
 
